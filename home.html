@@ -9,34 +9,19 @@
      <link rel="stylesheet" href="style.css">
      <title>HOME</title>
 </head>
-<body style="height: 75vh; " >
-     <nav class="navbar navbar-expand-lg navbar-dark group">
-          <div class="container">
+<body style="height: 100vh; " >
+     <nav class="navbar navbar-expand-lg navbar-dark group d-flex justify-content-between ">
+          <div class="container d-flex justify-content-between">
               <a class="navbar-brand" href="#">SMART LOGIN</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-  
-                      <li class="nav-item ">
-                          <button id="btn" class="nav-link btn btn-outline-warning " >Logout</button>
-                      </li>
-  
-  
-                  </ul>
-  
+              
+               <button class="btn btn-danger" id="btn">LOGOUT</button>
               </div>
           </div>
       </nav>
      
-        <div class="container">
-
-          <div class="input w-75 wi text-center">
-               <p id="output">Welcome </p>
+          <div class="input w-75  wi m-auto text-center">
+               <p id="output" class="text-center px-5">Welcome </p>
           </div>
-     </div>
 
         <script>
                var output=document.getElementById("output");
@@ -47,7 +32,6 @@
                function getDATA(){
                     var lusers='<p>'+localStorage.getItem("useee")+' !'+'</p>';
                     output.innerHTML+=lusers;
-                    
                }
                getDATA();
                
