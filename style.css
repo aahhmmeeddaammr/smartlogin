@@ -1,0 +1,18 @@
+body{
+     background-image: url(img/bg.png);
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     color: aliceblue;
+     height: 100vh;
+}
+
+.input{
+     box-shadow:5px 5px 5px 5px  black ;
+}
+.wi{
+     font-size: 39px;
+     text-align: center;
+     margin-top: 20% !important;
+
+}
