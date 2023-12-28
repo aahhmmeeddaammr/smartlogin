@@ -41,7 +41,7 @@ function getDATA(){
  */
 function validate(){
      var regex=/[a-zA-Z][a-zA-Z1-9]{7,}/gm;
-     var regex2=/[a-zA-Z1-9.]{3,}@[a-zA-Z.]{1,}.[a-zA-Z]{2,}/gm;
+     var regex2=/[a-zA-Z1-9 .]{3,}@[a-zA-Z.]{1,}.[a-zA-Z]{2,}/gm;
      var regex3=/[a-zA-Z1-9 ]{3,}/gm
      getDATA();
      for(var i=0;i<users.length;i++){
