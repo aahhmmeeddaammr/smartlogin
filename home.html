@@ -27,7 +27,7 @@
                var output=document.getElementById("output");
                var btn=document.getElementById("btn");
                btn.onclick=function(){
-                    location.href="index.html"
+                    setInterval(function(){location.href="index.html"},500);
                }
                function getDATA(){
                     var lusers='<p>'+localStorage.getItem("useee")+' !'+'</p>';
