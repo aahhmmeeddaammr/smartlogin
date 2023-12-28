@@ -40,12 +40,12 @@ function getDATA(){
  * THIS function validate the inputs from user
  */
 function validate(){
-     var regex=/[a-zA-Z1-9]{8,}/gm;
-     var regex2=/[a-zA-Z1-9]{3,}@[a-zA-Z]{1,}.[a-zA-Z]{2,}/gm;
-     var regex3=/[a-zA-Z1-9]{3,}/gm
+     var regex=/[a-zA-Z][a-zA-Z1-9]{7,}/gm;
+     var regex2=/[a-zA-Z1-9.]{3,}@[a-zA-Z.]{1,}.[a-zA-Z]{2,}/gm;
+     var regex3=/[a-zA-Z1-9 ]{3,}/gm
      getDATA();
      for(var i=0;i<users.length;i++){
-          if(users[i].name.includes(username.value)||users[i].email.includes(UserEmail.value)){
+          if(users[i].name==(username.value)||users[i].email==(UserEmail.value)){
                document.getElementById("output").innerHTML="THIS DATA USED";
                document.getElementById("output").style.color='red'
                return false;
@@ -55,10 +55,10 @@ function validate(){
 
           document.getElementById("output").innerHTML="SUCSSES";
           document.getElementById("output").style.color='green';
+          setInterval(function(){location.href="index.html"},500);
           return true;
      }
      document.getElementById("output").innerHTML="Enter correct data";
      document.getElementById("output").style.color='red'
      return false;
-     
 }
